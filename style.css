@@ -578,3 +578,169 @@ button {
         font-size: 13px;
     }
       }
+/* =========================================
+   ALISA AVATAR — 4-BOSQICH
+========================================= */
+
+.avatar {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            #ffe1cf 0%,
+            #f2b89f 35%,
+            #c87968 70%,
+            #703f4c 100%
+        );
+
+    border: 3px solid rgba(255,255,255,0.65);
+
+    box-shadow:
+        0 0 30px rgba(255,150,190,0.35),
+        0 15px 40px rgba(0,0,0,0.35);
+}
+
+
+/* Soch */
+
+.avatar::before {
+    content: "";
+
+    position: absolute;
+
+    width: 125%;
+    height: 75%;
+
+    top: -25%;
+    left: -12%;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #17131b,
+            #3b2631 55%,
+            #120f16
+        );
+
+    box-shadow:
+        0 8px 15px rgba(0,0,0,0.30);
+}
+
+
+/* Yuz */
+
+.avatar::after {
+    content: "";
+
+    position: absolute;
+
+    width: 58%;
+    height: 64%;
+
+    left: 21%;
+    top: 25%;
+
+    border-radius:
+        46% 46% 48% 48%;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffdcca,
+            #efb29d
+        );
+
+    box-shadow:
+        inset 0 -8px 15px
+        rgba(130,60,60,0.12);
+}
+
+
+/* AL yozuvi */
+
+.avatar span {
+    position: relative;
+
+    z-index: 5;
+
+    margin-top: 42px;
+
+    font-size: 20px;
+
+    color: rgba(80,35,45,0.75);
+
+    text-shadow: none;
+
+    opacity: 0.75;
+}
+
+
+/* Ko‘zlar */
+
+.avatar {
+    --eye-color: #30253a;
+}
+
+.avatar span::before,
+.avatar span::after {
+    content: "";
+
+    position: absolute;
+
+    top: 52px;
+
+    width: 7px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: var(--eye-color);
+}
+
+
+/* Chap ko‘z */
+
+.avatar span::before {
+    left: -23px;
+}
+
+
+/* O‘ng ko‘z */
+
+.avatar span::after {
+    right: -23px;
+}
+
+
+/* Yuz animatsiyasi */
+
+.avatar {
+    animation:
+        avatarFloat 3s ease-in-out infinite,
+        avatarGlow 4s ease-in-out infinite;
+}
+
+
+@keyframes avatarGlow {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 30px
+            rgba(255,150,190,0.30),
+            0 15px 40px
+            rgba(0,0,0,0.35);
+    }
+
+    50% {
+        box-shadow:
+            0 0 45px
+            rgba(255,150,190,0.50),
+            0 15px 40px
+            rgba(0,0,0,0.35);
+    }
+    }
