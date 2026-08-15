@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111827"
+    >
+
+    <title>ALISA — ISO'ning AI yordamchisi</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div id="app">
+
+        <header class="topbar">
+
+            <div>
+                <h1>ALISA</h1>
+                <p>ISO'ning AI yordamchisi</p>
+            </div>
+
+            <div
+                id="status"
+                class="status"
+            >
+                ● Tayyor
+            </div>
+
+        </header>
+
+
+        <main id="chat">
+
+            <section class="welcome">
+
+                <div class="avatar">
+                    <span>AL</span>
+                </div>
+
+                <h2>Salom! 👋</h2>
+
+                <p>
+                    Men ALISA — ISO'ning quvnoq
+                    va sho‘x AI yordamchisiman.
+                </p>
+
+            </section>
+
+        </main>
+
+
+        <form
+            id="messageForm"
+            class="inputbar"
+        >
+
+            <button
+                type="button"
+                id="micButton"
+                class="control-button"
+                aria-label="Mikrofon"
+            >
+                🎤
+            </button>
+
+            <input
+                id="messageInput"
+                type="text"
+                placeholder="ALISAga yozing..."
+                autocomplete="off"
+            >
+
+            <button
+                type="submit"
+                id="sendButton"
+                class="send-button"
+                aria-label="Yuborish"
+            >
+                ➤
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+              </html>
